@@ -26,6 +26,7 @@ pipeline {
             slackSend channel: 'YourFirstName_IP1', color: 'good', message: 'Successfully deployed to Heroku'
         }
     }
+    }
      post {
         success {
             emailext attachLog: true,
@@ -57,4 +58,4 @@ pipeline {
         }
      }
   }
-}
+
