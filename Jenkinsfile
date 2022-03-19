@@ -40,7 +40,7 @@ pipeline {
                       <p><i>(Build log is attached.)</i></p>
                     """,
                 subject: "Status: 'SUCCESS' -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'",
-                to: 'lewis.mocha@student.moringaschool.com'
+                to: 'lewismocha@gmail.com'
         }
         failure {
             emailext attachLog: true,
