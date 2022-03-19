@@ -21,8 +21,8 @@ pipeline {
             sh 'npm test'
             }
     }
-    post{
-    failure {
+    post {
+      failure {
             emailext attachLog: true,
                 body:
                     """
