@@ -61,5 +61,6 @@ pipeline {
                 subject: "Status: FAILURE -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'", 
                 to: 'lewis.mocha@student.moringaschool.com'
         }
-     } 
+     }
+  }
 }
